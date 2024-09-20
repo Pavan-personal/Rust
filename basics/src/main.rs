@@ -1,13 +1,13 @@
-// struct rectangle {
-//     width: i32,
-//     height: i32
-// }
+struct rectangle {
+    width: i32,
+    height: i32
+}
 
-// impl rectangle {
-//     fn area(&self) -> i32{
-//         self.width * self.height
-//     }
-// }
+impl rectangle {
+    fn area(&self) -> i32{
+        self.width * self.height
+    }
+}
 
 enum Direction {
     Left,
@@ -17,25 +17,25 @@ enum Direction {
 }
 
 fn main() {
-    // println!("Learning rust basics");
-    // println!("{}", is_even(32));
-    // println!("{}", find_nth_fibonaci(9));
-    // println!("{}", String::from("Pavan"));
-    // let mut s: String = String::from("Dhonia");
-    // let mut str = "Pavan Kumar";
-    // s = String::from("virat");
-    // str = "birat";
-    // s.push_str("Pk");
-    // println!("{}",s.replace("a", "_"));
-    // println!("{} {}",str,s);
-    // str = "Ravan";
+    println!("Learning rust basics");
+    println!("{}", is_even(32));
+    println!("{}", find_nth_fibonaci(9));
+    println!("{}", String::from("Pavan"));
+    let mut s: String = String::from("Dhonia");
+    let mut str = "Pavan Kumar";
+    s = String::from("virat");
+    str = "birat";
+    s.push_str("Pk");
+    println!("{}",s.replace("a", "_"));
+    println!("{} {}",str,s);
+    str = "Ravan";
     // s = "Pavan";
-    // let r1 = rectangle {
-    //     width: 4,
-    //     height: 9
-    // };
-    // println!("{}",r1.width + r1.height + 11);
-    // println!("{}",r1.area());
+    let r1 = rectangle {
+        width: 4,
+        height: 9
+    };
+    println!("{}",r1.width + r1.height + 11);
+    println!("{}",r1.area());
     let d = Direction::Down;
     let mut moved = match d {
         Direction::Down => String::from("down"),
@@ -49,30 +49,30 @@ fn main() {
 
 // function for even number
 
-// fn is_even(n: i32) -> bool {
-//     if n % 2 == 0 {
-//         return true;
-//     }
-//     return false;
-// }
+fn is_even(n: i32) -> bool {
+    if n % 2 == 0 {
+        return true;
+    }
+    return false;
+}
 
 // function for fibonaci number
 
-// fn find_nth_fibonaci(n: i32) -> i32 {
-//     let mut a = 0;
-//     let mut b = 1;
-//     if n == 0 {
-//         return a;
-//     } else if n == 1 {
-//         return b;
-//     }
-//     for _ in 1..n-2 {
-//         let c = a + b;
-//         a = b;
-//         b = c;
-//     }
-//     return b;
-// }
+fn find_nth_fibonaci(n: i32) -> i32 {
+    let mut a = 0;
+    let mut b = 1;
+    if n == 0 {
+        return a;
+    } else if n == 1 {
+        return b;
+    }
+    for _ in 1..n-2 {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
 
 
 /*
