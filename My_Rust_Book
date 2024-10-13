@@ -1,0 +1,27 @@
+1 Theory Stuff:
+
+    -> here println is not a fucntion, it is a macro (!)
+
+    -> Rust is a compiled language
+
+    -> rustc file_name.rs -> to compile the rust file
+
+    -> ./file_name -> to run the compiled file (executable file)
+
+    -> rustfmt file_name.rs -> to format the rust file
+
+    -> cargo is just like npm
+
+    -> In rust cargo.toml is similar to package.json
+
+    -> Crates are similar to Packages
+
+    -> cargo new <project_name> -> to create a new project simply
+
+    -> cargo build for compiling code
+
+    -> cargo run is for both compiling and runnning the compiled code
+
+2 Language basics
+
+    -> 
